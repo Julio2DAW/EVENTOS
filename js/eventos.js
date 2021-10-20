@@ -11,6 +11,18 @@ function iniciar() {
   mapa.onclick = ponerSeta
 }
 
-function ponerSeta() {
-  console.log('En ponerSeta')
+function ponerSeta(evento) {
+  console.log(evento)
+  //let seta = document.getElementById('setaPrueba')
+  let seta = document.createElement('img')
+  seta.setAttribute('src', './img/seta.png')
+  seta.classList.add('seta')
+  seta.style.top = `${evento.clientY - 25}px`
+  seta.style.left = `${evento.clientX - 25}px`
+  let body = document.getElementsByTagName('body')[0]
+  body.appendChild(seta)
+}
+
+function quitarSeta() {
+
 }
