@@ -3,6 +3,12 @@
   Autor: Julio Antonio Ramos Gago
   Licencia: GPL v3 2021
 */
-img{
+.mapa{
   height: 90%;
+}
+.seta{
+  position: absolute;
+  left: 70px;
+  top: 80px;
+  height: 50px;
 }

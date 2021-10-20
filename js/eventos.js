@@ -1,17 +1,16 @@
 'use strick'
 
 window.onload = iniciar
+let mapa = null
 
 function iniciar() {
-  let img = document.getElementsByTagName('img')[0]
-  //img.onclick = namejadorClick
-  img.addEventListener('click', namejadorClick)
-  img.addEventListener('click', namejadorClick2)
+  mapa = document.getElementById('imgMapa')
+  //img.onclick = namejadorClick -> Lo más recomendable
+  //img.addEventListener('click', namejadorClick) //para librerias o para varios eventos
+  //img.addEventListener('click', namejadorClick2)
+  mapa.onclick = ponerSeta
 }
 
-function namejadorClick() {
-  console.log('TRON')
-}
-function namejadorClick2() {
-  console.log('TRON2')
+function ponerSeta() {
+  console.log('En ponerSeta')
 }
